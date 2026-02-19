@@ -1,73 +1,82 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
   background: #f9f9f9;
-  color: #111;
+}
+
+/* Container Flex Layout */
+.container {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
-header {
-  text-align: center;
-  padding: 2rem 1rem;
+/* Left Hub */
+.hub {
+  width: 220px;
   background: #222;
   color: #fff;
+  padding: 2rem 1rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-header nav a {
+.hub h2 {
+  margin-bottom: 1.5rem;
+}
+
+.hub ul {
+  list-style: none;
+  width: 100%;
+}
+
+.hub ul li {
+  margin-bottom: 1rem;
+}
+
+.hub ul li a {
   color: #ffcc00;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
 }
 
-header nav a:hover {
+.hub ul li a:hover {
   text-decoration: underline;
 }
 
-main {
+/* Right Content */
+.content {
   flex: 1;
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
+  padding: 2rem;
 }
 
+.content h1 {
+  margin-bottom: 1rem;
+}
+
+.stories article {
+  margin-bottom: 2rem;
+}
+
+.stories img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+}
+
+/* Footer if needed */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #222;
-  color: #fff;
-}
-
-.hub-links {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-}
-
-.hub-button {
-  display: block;
-  padding: 1rem 2rem;
-  background: #0366d6;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  transition: background 0.2s;
-}
-
-.hub-button:hover {
-  background: #024ea1;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin: 0.8rem 0;
+  color: #555;
 }
