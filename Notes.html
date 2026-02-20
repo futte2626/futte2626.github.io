@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Math Notes</title>
+    <title>Math Notes - Math Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Math Notes</h1>
-    <nav><a href="index.html">&larr; Back to Hub</a></nav>
-</header>
+<div class="container">
+    <!-- Left Hub - same on all pages -->
+    <nav class="hub">
+        <h2>Math Hub</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Work.html">My Work</a></li>
+            <li><a href="Notes.html" class="active">Notes</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <ul>
-        <li><a href="#">Linear Algebra Notes</a></li>
-        <li><a href="#">Calculus Notes</a></li>
-        <li><a href="#">Number Theory Notes</a></li>
-        <li><a href="#">Other Topics</a></li>
-    </ul>
-</main>
+    <!-- Right Content -->
+    <main class="content">
+        <h1>Math Notes</h1>
 
-<footer>
-    <p>© 2026 A Math Enjoyer</p>
-</footer>
+        <ul class="notes-list">
+            <li><a href="#">Linear Algebra Notes</a></li>
+            <li><a href="#">Calculus Notes</a></li>
+            <li><a href="#">Number Theory Notes</a></li>
+            <li><a href="#">Other Topics</a></li>
+        </ul>
+    </main>
+</div>
 </body>
 </html>
